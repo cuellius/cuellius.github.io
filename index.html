@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Momentum</title>
+</head>
+<body>
+
+<div style="background-color: rgba(255, 255, 255, 0.678888); position: absolute; top: 3%; width: 80%; height: 96%; border: 4px solid rgba(255, 255, 255, 0.2); border-radius: 15px; z-index: -1000; ">
+</div>
+
+
+<div class="weather">
+    <div class="city__weather">
+        <p class="nameCity"></p>
+        <input class="hidden nameCityInput" placeholder="Input city">
+        <i class="weather-icon owf"></i>
+    </div>
+    <div class="weather__condition">
+        <p class="temperature"></p>
+        <p class="humidity"></p>
+        <p class="wind"></p>
+    </div>
+</div>
+
+<nav class="nav">
+    <a class="previous" href="#">Previous</a>
+    <a class="next" href="#">Next</a>
+</nav>
+<div class="date"></div>
+<time class="time"></time>
+<div class="get__greeting">
+    <h1>
+        <span class="greeting"></span>
+    </h1>
+
+    <h1>
+        <span class="name" contenteditable="true"></span>
+    </h1>
+</div>
+
+<h2 class="focus__title">What Is Your Focus For Today?</h2>
+
+<h2 class="focus" contenteditable="true"></h2>
+
+<a class="btn__quote">Refresh quote</a>
+<div class="quote__block">
+    <p class="quote"></p>
+    <p class="author"></p>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
