@@ -25,8 +25,8 @@ function showTime() {
 
 	let convhms = (nn) => nn < 10 ? '0' + nn : nn.toString();
 		
-	date.innerHTML = weekDay + ', ' + month + ' ' + day + ', ' + year;
-	time.innerHTML = convhms(hour) + ':' + convhms(minutes) + ':' + convhms(seconds);
+	date.innerHTML = '<p>' + weekDay + ', ' + month + ' ' + day + ', ' + year + '</p>';
+	time.innerHTML = '<p>' + convhms(hour) + ':' + convhms(minutes) + ':' + convhms(seconds) + '</p>';
 
     setTimeout(showTime, 1000);
 }
