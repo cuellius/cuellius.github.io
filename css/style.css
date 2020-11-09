@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    height: 100vh;
+    /*width: 100vw;*/
+
+    color: #000000;
+    background: center / cover;
+    background: rgba(15, 15, 65, 0.2);
+    transition: background-image 1s ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 9999999px 0 0 0 rgba(0, 0, 0, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+/*Weather*/
+
+.weather {
+    display: flex;
+}
+.weather__condition>p {
+    margin-bottom: 15px;
+}
+
+.nameCity {
+    padding: 3px 10px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    font-size: 2rem;
+    cursor: pointer;
+
+    transition: box-shadow .2s linear;
+}
+
+.nameCity:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.nameCityInput {
+    display: none;
+    padding: 5px 10px;
+    /*border: 1px solid red;*/
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nameCityInput:focus {
+    outline: none;
+    border: 2px solid #510bba;
+    border-radius: 7px;
+}
+
+
+.temperature {
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+
+.weather-icon {
+    font-size: 50px;
+    color: #fcfcfc;
+}
+.weather-icon:hover {
+    animation: shake 1.5s;
+}
+
+/*navigation*/
+
+.nav {
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    border-radius: 15px;
+    padding: 8px 8px;
+    font-family: Georgia, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: all 0.2s linear;
+}
+
+.nav a:hover {
+    opacity: .6;
+    box-shadow: 0 0 0 9999999px rgba(0, 0, 0, 0.4);
+}
+
+.date {
+    font-size: 5.2rem;
+}
+
+.time {
+    font-size: 8rem;
+
+}
+
+/*Greeting*/
+
+.get__greeting {
+    /*display: flex;*/
+    /*width: 100vw;*/
+    /*justify-content: center;*/
+}
+
+.greeting {
+    cursor: default;
+}
+
+.focus__title {
+    cursor: default;
+}
+
+h1 {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    /*display: block;*/
+    margin-bottom: .5rem;
+    opacity: .9;
+}
+
+.quote__block {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 40px;
+    /*margin-top: 50px;*/
+
+    background: rgba(172, 172, 172, 0.8);
+    border-radius: 20px;
+	
+	border: 4px solid rgba(88, 88, 88, 0.2);
+
+}
+
+
+.btn__quote {
+    margin: 25px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #ffb24a;
+    /*outline: none;*/
+    border-color: #a06936;
+    transition: background-color 0.3s linear;
+}
+
+.btn__quote:hover {
+    cursor: pointer;
+    background-color: #c17b3a;
+}
+
+.quote {
+
+}
+
+.author {
+    padding-top: 50px;
+}
+
+/*Media*/
+@media (max-width: 1100px) {
+    .date{
+        font-size: 3rem;
+    }
+
+    .time {
+        font-size: 5rem;
+    }
+
+    .get__greeting {
+        margin-top: 20px;
+    }
+    h1{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .date{
+        font-size: 2rem;
+    }
+
+    .time {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .time {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        margin-bottom: .2rem;
+        opacity: .6;
+    }
+}
+
+@media (max-width: 460px) {
+
+ .nav {
+     margin-bottom: 20px;
+ }
+    .date {
+        font-size: 1.7rem;
+    }
+
+    .time{
+        font-size: 2.5rem;
+    }
+
+    .get__greeting {
+       font-size: 1rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .time {
+        font-size: 1.7rem;
+        /*margin-bottom: 1.8rem;*/
+    }
+
+
+    .greeting {
+        font-size: 1.3rem;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-height: 600px) {
+    body {
+        height: 100%;
+        max-height: 100%;
+    }
+}
