@@ -1,60 +1,120 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="owfont-regular.css">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Momentum</title>
+    <meta name="charset" content="utf-8">
+	
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Conference Template">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Математическое моделирование и дифференциальные уравнения</title>
 </head>
+
 <body>
 
-<div style="background-color: rgba(255, 255, 255, 0.678888); position: absolute; top: 3%; width: 80%; height: 96%; border: 4px solid rgba(255, 255, 255, 0.2); border-radius: 15px; z-index: -1000; ">
-</div>
-
-
-<div class="weather">
-    <div class="city__weather">
-        <p class="nameCity"></p>
-        <input class="hidden nameCityInput" placeholder="Input city">
-        <i class="weather-icon owf" style="font-size: 33pt;"></i>
+    <div class="banner">
+        <img src="assets/bsu-banner.png" alt="Conference Template Banner">
+        <div class="top-left">            
+			<span class="title1">Математическое моделирование</span>
+			<span class="title12"> и </span> 
+			<span class="title2">дифференциальные уравнения</span> 
+        </div>
+        <div class="bottom-right">
+            17.12.2024 &#8212; 21.12.2024 <br> Белорусский государственный университет
+        </div>
     </div>
-    <div class="weather__condition">
-        <p class="temperature"></p>
-        <p class="humidity"></p>
-        <p class="wind"></p>
-    </div>
-</div>
 
-<nav class="nav">
-    <a class="previous" href="#">Previous</a>
-    <a class="next" href="#">Next</a>
-</nav>
-<div class="date"></div>
-<time class="time"></time>
-<div class="get__greeting">
-    <h1>
-        <span class="greeting"></span>
-    </h1>
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a class="current" title="Главная страница конференции" href=".">Главная</a>
+            </td>
+            <td class="navigation">
+                <a title="Регистрация на конференцию" href="registration">Регистрация</a>
+            </td>
+            <td class="navigation">
+                <a title="Оргкомитет конференции" href="committee">Оргкомитет</a>
+            </td>
+            <td class="navigation">
+                <a title="Программа конференции" href="program">Программа</a> 
+            </td>
+        </tr>
+		<tr style="height: 10px;"></tr>
+		<tr>
+            <td class="navigation">
+                <a title="Место проведения конференции" href="directions">Место<br>проведения</a>
+            </td>
+            <td class="navigation">
+                <a title="Информация для участников" href="for-participants">Информация<br>для участников</a>
+            </td>
+            <td class="navigation">
+                <a title="Контакты" href="contacts">Контакты</a>
+            </td>
+            <td class="navigation">
+                <a title="Постер конференции" href="flyer">Постер</a>
+            </td>
+		</tr>
+    </table>
 
-    <h1>
-        <span class="name" contenteditable="true"></span>
-    </h1>
-</div>
+    <h2>О конференции</h2>
+    <p>
+        Приглашаем Вас принять участие в 
+		<i>пятой международной научной конференции <b>«Математическое моделирование и дифференциальные уравнения»</b>, 
+		посвященной столетию со дня рождения Иванова Е. А. и Бриша Н. И.</i></p>
+    <p>
+        TODO: Добавить информацию о конференции
+    </p>
+	
+	<h2>Направления</h2>
+	<p>
+        TODO: Тут информация о направлениях работы конференции.
+    </p>
+	
+	<h2>Сборник докладов</h2>
+	<p>
+		Планируется издание сборника докладов с последующей индексацией его в РИНЦ. Ссылка на сборник будет размещена позже.
+	</p>
+	<p>
+		Ознакомиться с материалами предыдуших конференции можно в <a target="_blank" href="https://elib.bsu.by/handle/123456789/303690">электронной библиотеке БГУ</a>.
+	</p>
 
-<h2 class="focus__title">What Is Your Focus For Today?</h2>
+    <h2>Организаторы</h2>
+    <!--<p>
+        Конференция огранизована 
+    </p>-->
+	
+    <table class="sponsors">
+        <tr>
+            <td class="sponsor">
+                <a target="_blank"  href="https://bsu.by/">
+                    <img src="assets/bsu-coat-of-arms.png" alt="БГУ" style="width: 35%">
+                </a>
+            </td>
+            <td class="sponsor">
+                <a target="_blank"  href="https://im.bas-net.by/">
+                    <img src="assets/imnasb-coat-of-arms.jpg" alt="Институт математики НАН Беларуси">
+                </a>
+            </td>
+			
+			<!--<td style="width:150px"></td>-->
+			
+            <td class="sponsor">
+                <a target="_blank"  href="https://nasb.gov.by/">
+                    <img src="assets/nasb-coat-of-arms.png" alt="Национальная академия наук Беларуси" style="width: 90%">
+                </a>
+            </td>
+        </tr>
+    </table>
 
-<h2 class="focus" contenteditable="true"></h2>
+    <footer>
+        &copy; Организаторы
+        &nbsp;|&nbsp; Site template by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    </footer>
 
-<a class="btn__quote" style="color: black;">Refresh quote</a>
-<div class="quote__block">
-    <p class="quote"></p>
-    <p class="author"></p>
-</div>
-
-
-<script src="app.js"></script>
 </body>
 </html>
+
